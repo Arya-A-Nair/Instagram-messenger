@@ -9,8 +9,8 @@ def login():
     url='https://www.instagram.com/accounts/login/'
     driver.get(url)
     sleep(1)
-    driver.find_element_by_xpath('//*[@id="loginForm"]/div/div[1]/div/label/input').send_keys('python_test123456789')
-    driver.find_element_by_xpath('//*[@id="loginForm"]/div/div[2]/div/label/input').send_keys('pythongod')
+    driver.find_element_by_xpath('//*[@id="loginForm"]/div/div[1]/div/label/input').send_keys(username)  #username to be substituted
+    driver.find_element_by_xpath('//*[@id="loginForm"]/div/div[2]/div/label/input').send_keys(password)  #password to be substituted
     driver.find_element_by_xpath('//*[@id="loginForm"]/div/div[3]/button').click()
     sleep(5)
     
