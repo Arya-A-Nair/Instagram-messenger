@@ -9,8 +9,8 @@ def login():
     url='https://www.instagram.com/accounts/login/'
     driver.get(url)
     sleep(1)
-    driver.find_element_by_xpath('//*[@id="loginForm"]/div/div[1]/div/label/input').send_keys(username)  #username to be substituted
-    driver.find_element_by_xpath('//*[@id="loginForm"]/div/div[2]/div/label/input').send_keys(password)  #password to be substituted
+    driver.find_element_by_xpath('//*[@id="loginForm"]/div/div[1]/div/label/input').send_keys('python_test123456789')
+    driver.find_element_by_xpath('//*[@id="loginForm"]/div/div[2]/div/label/input').send_keys('pythongod')
     driver.find_element_by_xpath('//*[@id="loginForm"]/div/div[3]/button').click()
     sleep(5)
     
@@ -46,6 +46,7 @@ original_image = image1.subsample(3,3)
 Label(left_frame, image=original_image).grid(row=1, column=0, padx=5, pady=5)
 
 
+
 lbl=Label(right_frame,text="Who would you like to send it to",bg="skyblue")
 lbl.grid(row=0, column=1)
 
@@ -65,4 +66,3 @@ button.grid(row=2, column=1)
 
 
 window.mainloop()
-
